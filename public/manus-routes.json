@@ -1,0 +1,6 @@
+{
+  "routes": [
+    { "path": "/", "title": "SyntaxHeist — 24-Hour Hackathon" },
+    { "path": "/register.html", "title": "Register — SyntaxHeist" }
+  ]
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Register your team for SyntaxHeist, a 24-hour hackathon by IEEE FISAT Student Branch.">
+  <title>Register — SyntaxHeist</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="page-shell">
+    <div class="announcement"><div class="wrap"><span><strong>Registration open</strong> / SH-27</span><span>20–21 Mar 2027 / FISAT, Angamaly</span></div></div>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="/" aria-label="SyntaxHeist home"><span class="brand-mark">SH<br><span>/27</span></span><span class="brand-text">SyntaxHeist<span>24-hour hackathon</span></span></a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open navigation">MENU</button>
+        <nav class="site-nav" data-site-nav aria-label="Primary navigation"><a href="/#mission">Mission</a><a href="/#tracks">Tracks</a><a href="/#schedule">Schedule</a><a href="/#venue">Venue</a><a class="nav-cta" href="/register.html" aria-current="page">Register <span aria-hidden="true">↗</span></a></nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-intro">
+        <div class="wrap"><p class="eyebrow">05 / your entry point</p><h1>Put your<br><span class="signal">name on it.</span></h1><p class="page-intro-dek">Tell us who is coming, what you want to explore, and how we can make the room useful for your team.</p></div>
+      </section>
+
+      <section class="form-section" aria-labelledby="registration-title">
+        <div class="wrap form-shell">
+          <aside class="form-aside"><p class="eyebrow">Before you submit</p><h2 id="registration-title">Small form. Big swing.</h2><p>Registration takes about three minutes. We will use these details to coordinate teams, logistics, and updates for the event.</p><div class="form-steps"><div class="form-step"><span>01</span> team signal</div><div class="form-step"><span>02</span> people in the room</div><div class="form-step"><span>03</span> the first question</div></div></aside>
+          <div>
+            <form class="form" data-registration-form novalidate>
+              <div class="form-grid">
+                <h3 class="form-section-title">Team signal <small>Required fields marked *</small></h3>
+                <div class="field"><label for="teamName">Team name <span>*</span></label><input id="teamName" name="teamName" type="text" required placeholder="e.g. Compile Club"><span class="field-error" data-error-for="teamName"></span></div>
+                <div class="field"><label for="teamSize">Team size <span>*</span></label><select id="teamSize" name="teamSize" required><option value="">Choose one</option><option value="1">1 — solo build</option><option value="2">2 people</option><option value="3">3 people</option><option value="4">4 people</option></select><span class="field-error" data-error-for="teamSize"></span></div>
+                <div class="field"><label for="institution">College / institution <span>*</span></label><input id="institution" name="institution" type="text" required placeholder="Your campus or community"><span class="field-error" data-error-for="institution"></span></div>
+                <div class="field"><label for="track">Preferred track / domain <span>*</span></label><select id="track" name="track" required><option value="">Choose a direction</option><option value="human-systems">People, access, care</option><option value="planet-place">Climate, campus, city</option><option value="open-infrastructure">Open infrastructure</option><option value="wildcard">Wildcard / something else</option></select><span class="field-error" data-error-for="track"></span></div>
+
+                <h3 class="form-section-title">Team lead <small>One point of contact</small></h3>
+                <div class="field"><label for="leaderName">Full name <span>*</span></label><input id="leaderName" name="leaderName" type="text" required autocomplete="name" placeholder="Your name"><span class="field-error" data-error-for="leaderName"></span></div>
+                <div class="field"><label for="leaderEmail">Email <span>*</span></label><input id="leaderEmail" name="leaderEmail" type="email" required autocomplete="email" placeholder="you@example.com"><span class="field-error" data-error-for="leaderEmail"></span></div>
+                <div class="field"><label for="contactNumber">Contact number <span>*</span></label><input id="contactNumber" name="contactNumber" type="tel" required autocomplete="tel" inputmode="tel" pattern="\+?[0-9\s()-]{7,18}" placeholder="+91 98765 43210"><span class="field-error" data-error-for="contactNumber"></span></div>
+                <div class="field"><label for="members">Team members</label><input id="members" name="members" type="text" placeholder="Names, separated by commas"><span class="field-error" data-error-for="members"></span></div>
+
+                <h3 class="form-section-title">The first question <small>Optional, but useful</small></h3>
+                <div class="field full"><label for="idea">What might you build?</label><textarea id="idea" name="idea" placeholder="A rough idea is more than enough. Tell us what you keep thinking about."></textarea><span class="field-error" data-error-for="idea"></span></div>
+                <p class="form-note">No polished pitch needed. This helps us make better mentor and track pairings.</p>
+                <div class="check-field"><input id="rules" name="rules" type="checkbox" required><label for="rules">I confirm that the details above are accurate and agree to follow the event rules and code of conduct. <span>*</span></label></div>
+                <div class="form-actions"><small>SH-27 / 20–21 MAR 2027</small><button class="button button-primary" type="submit">Send registration <span aria-hidden="true">↗</span></button></div>
+              </div>
+            </form>
+            <div class="form-success" data-form-success hidden role="status" aria-live="polite"><p class="eyebrow">Signal received / 200 OK</p><h2>You’re on the list.</h2><p>Thanks for raising your hand. We have your registration details locally for this demo flow. The IEEE FISAT Student Branch team will follow up with event logistics and next steps.</p><a class="button button-ghost" href="/">Return to the brief <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="wrap"><div class="footer-top"><div><a class="brand" href="/" aria-label="SyntaxHeist home"><span class="brand-mark">SH<br><span>/27</span></span><span class="brand-text">SyntaxHeist<span>IEEE FISAT Student Branch</span></span></a><p class="footer-note">The 24-hour build room for students who would rather ship an idea than pitch a safe one.</p></div><div class="footer-links"><a href="mailto:ieeefisat@fisat.ac.in">Email</a><a href="https://www.instagram.com/ieeefisat/" target="_blank" rel="noreferrer">Instagram</a><a href="https://www.linkedin.com/company/ieee-fisat-student-branch/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/IEEE-FISAT-Student-Branch" target="_blank" rel="noreferrer">GitHub</a><a href="/">Home ↗</a></div></div><div class="footer-bottom"><span>SyntaxHeist / SH-27</span><span>Built for the curious / 2027</span></div></div></footer>
+  </div>
+</body>
+</html>
