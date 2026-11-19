@@ -362,3 +362,121 @@ body { background: #101510; }
   .section:nth-of-type(3) .prize-feature { border-right: 0; border-bottom: 1px solid var(--ink); }
   .form { box-shadow: 8px 8px 0 var(--orange); }
 }
+
+/* Raw terminal / brutalist cyberpunk pass */
+:root {
+  --ink: #050707;
+  --ink-soft: #0a0f0e;
+  --ink-raised: #101817;
+  --paper: #e9f8ee;
+  --paper-dim: #8ea79a;
+  --signal: #b9ff00;
+  --mint: #00f5b8;
+  --orange: #ff5c35;
+  --cyan: #69ddff;
+  --line: rgba(233,248,238,.19);
+  --line-dark: rgba(5,7,7,.25);
+}
+
+body { background: #050707; color: var(--paper); }
+body::before { position: fixed; inset: 0; z-index: 50; pointer-events: none; opacity: .08; background: repeating-linear-gradient(0deg, transparent 0 3px, rgba(255,255,255,.18) 4px), linear-gradient(90deg, rgba(0,245,184,.04), transparent 35%, rgba(185,255,0,.04)); mix-blend-mode: screen; content: ""; }
+.announcement { background: var(--signal); color: var(--ink); border-bottom: 2px solid var(--ink); }
+.announcement strong { color: var(--ink); }
+.site-header { background: rgba(5,7,7,.94); border-bottom: 1px solid var(--mint); box-shadow: 0 4px 0 rgba(185,255,0,.08); }
+.brand-mark { border-color: var(--signal); background: transparent; color: var(--signal); }
+.organizer-logo { width: 164px; height: 42px; filter: none; mix-blend-mode: screen; opacity: .95; }
+
+.hero { background: #070b0b; color: var(--paper); border-bottom: 1px solid var(--mint); }
+.hero::before { opacity: .65; background-image: linear-gradient(rgba(0,245,184,.11) 1px, transparent 1px), linear-gradient(90deg, rgba(0,245,184,.11) 1px, transparent 1px); background-size: 32px 32px; mask-image: linear-gradient(to bottom, black, transparent 92%); }
+.hero::after { top: 0; right: 0; width: 47%; height: 100%; max-width: none; max-height: none; border: 0; border-left: 1px solid rgba(105,221,255,.45); border-radius: 0; background: linear-gradient(90deg, rgba(7,11,11,.98), rgba(7,11,11,.58)), url('/assets/fisat-campus.jpg') center / cover; background-blend-mode: multiply; box-shadow: inset 0 0 0 1px rgba(185,255,0,.1); opacity: .72; }
+.hero-copy, .hero-console { position: relative; z-index: 1; }
+.hero h1 .outline { -webkit-text-stroke-color: var(--paper); text-shadow: 4px 4px 0 rgba(0,245,184,.15); }
+.hero h1 .signal { position: relative; display: inline-block; text-shadow: 4px 4px 0 var(--orange); }
+.hero h1 .signal::after { position: absolute; inset: 0; color: var(--mint); opacity: 0; pointer-events: none; content: attr(data-text); transform: translate(5px,-3px); }
+.hero h1 .signal:hover::after { opacity: .8; animation: glitch .24s steps(2) infinite; }
+.hero-dek { color: var(--paper-dim); }
+.hero-stamp { border-color: var(--mint); color: var(--paper-dim); background: rgba(0,245,184,.04); box-shadow: 4px 4px 0 rgba(255,92,53,.75); }
+.hero-stamp strong { color: var(--signal); }
+.hero-meta { border-color: var(--mint); }
+.hero-meta div { border-right-color: var(--mint); }
+.hero-meta span { color: var(--mint); }
+.hero-meta strong { color: var(--paper); }
+.hero .text-link { color: var(--mint); border-bottom-color: var(--mint); }
+.hero .button-primary { background: var(--signal); color: var(--ink); box-shadow: 5px 5px 0 var(--orange); }
+.hero .button-primary:hover { background: var(--paper); color: var(--ink); }
+.hero-console { min-height: 410px; border-color: var(--mint); background: linear-gradient(135deg, rgba(5,7,7,.91), rgba(5,7,7,.7)), url('/assets/fisat-campus.jpg') center / cover; background-blend-mode: multiply; box-shadow: 8px 8px 0 var(--signal); }
+.hero-console::before, .hero-console::after { border-color: var(--signal); }
+.organizer-lockup { color: var(--paper-dim); }
+.organizer-lockup img { filter: none; mix-blend-mode: screen; }
+.console-time .time-block { border: 1px solid rgba(0,245,184,.25); }
+.time-block::before { background: var(--orange); }
+.console-log b { color: var(--mint); }
+.console-log .cursor, .terminal-command { color: var(--signal); }
+.terminal-command { width: 100%; border: 0; padding: 0; background: none; text-align: left; cursor: pointer; font: inherit; }
+.terminal-command:hover, .terminal-command.is-executed { color: var(--paper); text-shadow: 0 0 12px rgba(185,255,0,.8); }
+.terminal-output { margin: 0; padding-top: 9px; border-top: 1px dashed rgba(185,255,0,.35); color: var(--mint); }
+.terminal-output[hidden] { display: none; }
+
+.section { border-bottom-color: var(--line); }
+.section:nth-of-type(1), .section:nth-of-type(3), .section:nth-of-type(5) { background: #070b0b; color: var(--paper); border-bottom-color: var(--line); }
+.section:nth-of-type(1) .lead, .section:nth-of-type(3) .lead, .section:nth-of-type(5) address { color: var(--paper-dim); }
+.section:nth-of-type(1) .rule-label, .section:nth-of-type(3) .rule-label, .section:nth-of-type(5) .eyebrow { color: var(--mint); }
+.section:nth-of-type(1) .rule-label::before, .section:nth-of-type(3) .rule-label::before { background: var(--orange); }
+.section:nth-of-type(1) .facts { border-color: var(--mint); }
+.section:nth-of-type(1) .fact { border-right-color: var(--mint); }
+.section:nth-of-type(1) .fact strong { color: var(--signal); }
+.section:nth-of-type(1) .fact span, .section:nth-of-type(3) .prize-row p, .section:nth-of-type(1) .about-copy { color: var(--paper-dim); }
+.section:nth-of-type(1) .about-copy .callout { border-left-color: var(--orange); color: var(--paper); }
+.section:nth-of-type(2) .track-grid { border-color: var(--mint); background: var(--mint); }
+.section:nth-of-type(2) .track { background: #070b0b; }
+.section:nth-of-type(2) .track:hover { background: var(--signal); color: var(--ink); box-shadow: 6px 6px 0 var(--orange); }
+.section:nth-of-type(2) .track:hover p, .section:nth-of-type(2) .track:hover .track-tag, .section:nth-of-type(2) .track:hover::after { color: var(--ink); }
+.section:nth-of-type(2) .track .track-tag { color: var(--mint); }
+.section:nth-of-type(3) .section-heading .lead { color: var(--paper-dim); }
+.section:nth-of-type(3) .prize-layout { border-color: var(--mint); background: var(--mint); }
+.section:nth-of-type(3) .prize-feature, .section:nth-of-type(3) .prize-list { background: #070b0b; }
+.section:nth-of-type(3) .prize-feature { border-right-color: var(--mint); }
+.section:nth-of-type(3) .prize-feature .eyebrow { color: var(--mint); }
+.section:nth-of-type(3) .prize-feature .amount { color: var(--signal); text-shadow: 4px 4px 0 var(--orange); }
+.section:nth-of-type(3) .prize-row { border-bottom-color: var(--line); }
+.section:nth-of-type(3) .prize-row strong { color: var(--orange); }
+.section:nth-of-type(5) .venue-card { border-color: var(--mint); background: linear-gradient(rgba(5,7,7,.58), rgba(5,7,7,.9)), url('/assets/fisat-campus.jpg') center / cover; box-shadow: 8px 8px 0 var(--signal); }
+.section:nth-of-type(5) .venue-map { background-color: rgba(5,7,7,.5); }
+.section:nth-of-type(5) .venue-meta { color: var(--paper-dim); }
+.section:nth-of-type(5) .button-ghost { border-color: var(--mint); color: var(--mint); }
+.section:nth-of-type(5) .button-ghost:hover { background: var(--signal); color: var(--ink); }
+.faq-list summary::after { color: var(--orange); }
+.site-footer { background: var(--signal); color: var(--ink); }
+.site-footer .brand-mark { background: var(--ink); color: var(--signal); border-color: var(--ink); }
+.site-footer .brand-text span, .footer-note, .footer-links a, .footer-bottom { color: #263522; }
+.footer-bottom { border-top-color: var(--ink); }
+
+.page-intro { background: #070b0b; color: var(--paper); border-bottom-color: var(--mint); }
+.page-intro::after { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, transparent 0 58%, rgba(0,245,184,.12) 58% 58.1%, transparent 58.1%), url('/assets/fisat-campus.jpg') right center / 44% 100% no-repeat; opacity: .45; content: ""; }
+.page-intro > .wrap { position: relative; z-index: 1; }
+.page-intro .eyebrow { color: var(--mint); }
+.page-intro-dek { color: var(--paper-dim); }
+.intro-ticket { border-color: var(--signal); background: rgba(185,255,0,.08); box-shadow: 5px 5px 0 var(--orange); }
+.intro-ticket span, .intro-ticket small { color: var(--paper-dim); }
+.intro-ticket strong { color: var(--signal); }
+.form-section { background: #050707; }
+.form-aside .eyebrow { color: var(--mint); }
+.form { border-color: var(--mint); background: #0a0f0e; box-shadow: 8px 8px 0 var(--signal); }
+.form-section-title { border-bottom-color: rgba(0,245,184,.35); }
+.form input:focus, .form select:focus, .form textarea:focus { box-shadow: 0 0 0 2px var(--signal), 5px 5px 0 var(--orange); }
+.form-actions .button-primary { background: var(--signal); color: var(--ink); box-shadow: 5px 5px 0 var(--orange); }
+.form-success { border-color: var(--signal); background: rgba(185,255,0,.1); }
+
+@keyframes glitch { 0% { clip-path: inset(10% 0 65% 0); } 50% { clip-path: inset(55% 0 18% 0); transform: translate(-4px, 2px); } 100% { clip-path: inset(28% 0 42% 0); } }
+@keyframes terminal-blink { 50% { opacity: 0; } }
+.cursor span { animation: terminal-blink 1s steps(1) infinite; }
+@media (max-width: 700px) {
+  .organizer-logo { display: none; }
+  .hero::after { top: auto; right: 0; bottom: 0; width: 100%; height: 37%; border-top: 1px solid rgba(105,221,255,.45); opacity: .22; }
+  .hero-console { box-shadow: 5px 5px 0 var(--signal); }
+  .hero-meta div, .hero-meta div + div { border-bottom-color: var(--mint); }
+  .section:nth-of-type(1) .fact { border-bottom-color: var(--mint); }
+  .section:nth-of-type(3) .prize-feature { border-right: 0; border-bottom-color: var(--mint); }
+  .page-intro::after { opacity: .18; width: 100%; background-size: cover; }
+  .form { box-shadow: 5px 5px 0 var(--signal); }
+}

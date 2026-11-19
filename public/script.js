@@ -79,4 +79,31 @@
       success.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
   }
+
+  const countdown = document.querySelector('[data-countdown]');
+  if (countdown) {
+    const target = new Date('2027-03-20T10:00:00+05:30').getTime();
+    const updateClock = () => {
+      const remaining = Math.max(0, target - Date.now());
+      const days = Math.floor(remaining / 86400000);
+      const hours = Math.floor((remaining % 86400000) / 3600000);
+      const minutes = Math.floor((remaining % 3600000) / 60000);
+      const seconds = Math.floor((remaining % 60000) / 1000);
+      countdown.textContent = `T- ${days}D ${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    };
+    updateClock();
+    window.setInterval(updateClock, 1000);
+  }
+
+  const command = document.querySelector('[data-terminal-command]');
+  const terminalOutput = document.querySelector('[data-terminal-output]');
+  if (command && terminalOutput) {
+    command.addEventListener('click', () => {
+      const isOpen = !terminalOutput.hidden;
+      terminalOutput.hidden = isOpen;
+      command.classList.toggle('is-executed', !isOpen);
+      command.setAttribute('aria-expanded', String(!isOpen));
+      if (!isOpen) terminalOutput.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+  }
 })();
