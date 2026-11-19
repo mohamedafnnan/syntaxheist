@@ -263,3 +263,102 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .form-actions { display: grid; justify-content: stretch; }
   .form-actions .button { width: 100%; }
 }
+
+/* Field manual / printed-poster refinement */
+:root {
+  --ink: #101510;
+  --ink-soft: #171d18;
+  --ink-raised: #232b23;
+  --paper: #eee9d9;
+  --paper-dim: #b6b5a7;
+  --signal: #baff22;
+  --mint: #83e8ad;
+  --orange: #ff6b4a;
+  --line: rgba(238, 233, 217, .22);
+  --line-dark: rgba(16, 21, 16, .22);
+}
+
+body { background: #101510; }
+.announcement { background: var(--signal); color: var(--ink); border-bottom-color: var(--ink); }
+.announcement strong { color: var(--ink); }
+.site-header { background: rgba(16, 21, 16, .95); border-bottom-color: rgba(238,233,217,.25); }
+.brand-mark { border-color: var(--signal); background: var(--signal); color: var(--ink); }
+
+.hero { background: var(--paper); color: var(--ink); border-bottom-color: var(--ink); }
+.hero::before { opacity: .9; background-image: linear-gradient(rgba(16,21,16,.09) 1px, transparent 1px), linear-gradient(90deg, rgba(16,21,16,.09) 1px, transparent 1px); }
+.hero::after { border-color: rgba(16,21,16,.18); box-shadow: 0 0 0 50px rgba(16,21,16,.04), 0 0 0 100px rgba(16,21,16,.025); }
+.hero .eyebrow { color: var(--ink); }
+.hero h1 .outline { -webkit-text-stroke-color: var(--ink); }
+.hero-dek { color: #495348; }
+.hero-stamp { border-color: var(--ink); color: #495348; }
+.hero-stamp strong { color: var(--orange); }
+.hero-meta { border-top-color: var(--ink); border-bottom-color: var(--ink); }
+.hero-meta div { border-right-color: var(--ink); }
+.hero-meta span { color: var(--orange); }
+.hero-meta strong { color: var(--ink); }
+.hero .text-link { color: var(--ink); border-bottom-color: var(--orange); }
+.hero .button-primary { background: var(--ink); color: var(--signal); }
+.hero .button-primary:hover { background: var(--orange); color: var(--ink); }
+
+.hero-console { background: linear-gradient(135deg, rgba(16,21,16,.96), rgba(16,21,16,.82)), url('/assets/fisat-campus.jpg') center / cover; background-blend-mode: multiply; border-color: var(--ink); box-shadow: 13px 13px 0 var(--orange); }
+.hero-console::before, .hero-console::after { border-color: var(--signal); }
+.organizer-lockup img { filter: none; mix-blend-mode: normal; }
+
+.section:nth-of-type(1), .section:nth-of-type(3), .section:nth-of-type(5) { background: var(--paper); color: var(--ink); border-bottom-color: var(--ink); }
+.section:nth-of-type(1) .lead, .section:nth-of-type(3) .lead, .section:nth-of-type(5) address { color: #495348; }
+.section:nth-of-type(1) .rule-label, .section:nth-of-type(3) .rule-label, .section:nth-of-type(5) .eyebrow { color: var(--ink); }
+.section:nth-of-type(1) .rule-label::before, .section:nth-of-type(3) .rule-label::before { background: var(--orange); }
+.section:nth-of-type(1) .facts { border-color: var(--ink); }
+.section:nth-of-type(1) .fact { border-right-color: var(--ink); }
+.section:nth-of-type(1) .fact strong { color: var(--orange); }
+.section:nth-of-type(1) .fact span, .section:nth-of-type(3) .prize-row p { color: #596157; }
+.section:nth-of-type(1) .about-copy { color: #495348; }
+.section:nth-of-type(1) .about-copy .callout { border-left-color: var(--orange); color: var(--ink); }
+
+.section:nth-of-type(2) .track-grid { border-color: var(--signal); background: var(--signal); }
+.section:nth-of-type(2) .track { background: var(--ink); }
+.section:nth-of-type(2) .track:hover { background: var(--signal); color: var(--ink); }
+.section:nth-of-type(2) .track:hover p, .section:nth-of-type(2) .track:hover .track-tag, .section:nth-of-type(2) .track:hover::after { color: var(--ink); }
+.section:nth-of-type(2) .track .track-tag { color: var(--signal); }
+
+.section:nth-of-type(3) .section-heading .lead { color: #495348; }
+.section:nth-of-type(3) .prize-layout { border-color: var(--ink); background: var(--ink); }
+.section:nth-of-type(3) .prize-feature, .section:nth-of-type(3) .prize-list { background: var(--paper); }
+.section:nth-of-type(3) .prize-feature { border-right: 1px solid var(--ink); }
+.section:nth-of-type(3) .prize-feature .eyebrow { color: var(--orange); }
+.section:nth-of-type(3) .prize-feature .amount { color: var(--ink); }
+.section:nth-of-type(3) .prize-row { border-bottom-color: var(--ink); }
+.section:nth-of-type(3) .prize-row strong { color: var(--orange); }
+
+.section:nth-of-type(5) .venue-card { border-color: var(--ink); background: var(--ink); box-shadow: 13px 13px 0 var(--orange); }
+.section:nth-of-type(5) .venue-meta { color: var(--paper-dim); }
+.section:nth-of-type(5) .button-ghost { border-color: var(--ink); color: var(--ink); }
+.section:nth-of-type(5) .button-ghost:hover { background: var(--ink); color: var(--signal); }
+
+.faq-list summary { font-family: var(--sans); }
+.faq-list summary::after { color: var(--orange); }
+.site-footer { background: var(--signal); color: var(--ink); }
+.site-footer .brand-mark { background: var(--ink); color: var(--signal); border-color: var(--ink); }
+.site-footer .brand-text span, .footer-note, .footer-links a, .footer-bottom { color: #3f493d; }
+.site-footer .footer-links a:hover { color: var(--ink); }
+.footer-bottom { border-top-color: var(--ink); }
+
+.page-intro { background: var(--paper); color: var(--ink); border-bottom-color: var(--ink); }
+.page-intro .eyebrow { color: var(--ink); }
+.page-intro-dek { color: #495348; }
+.intro-ticket { border-color: var(--ink); background: var(--signal); }
+.intro-ticket span, .intro-ticket small, .intro-ticket strong { color: var(--ink); }
+.form-section { background: #101510; }
+.form-aside .eyebrow { color: var(--signal); }
+.form { border-color: var(--signal); background: #171d18; box-shadow: 13px 13px 0 var(--orange); }
+.form-section-title { border-bottom-color: rgba(238,233,217,.3); }
+.form-actions .button-primary { background: var(--signal); color: var(--ink); }
+.form-success { border-color: var(--signal); background: rgba(186,255,34,.1); }
+
+@media (max-width: 700px) {
+  .hero-meta div, .hero-meta div + div { border-bottom-color: var(--ink); }
+  .hero-console { box-shadow: 8px 8px 0 var(--orange); }
+  .section:nth-of-type(1) .fact { border-bottom-color: var(--ink); }
+  .section:nth-of-type(3) .prize-feature { border-right: 0; border-bottom: 1px solid var(--ink); }
+  .form { box-shadow: 8px 8px 0 var(--orange); }
+}

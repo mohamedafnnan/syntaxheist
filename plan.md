@@ -24,9 +24,9 @@ Three possible directions were considered:
 2. **Neon arcade / playful cyberpunk** — 0.04
 3. **Minimal greenroom / institutional modernism** — 0.08
 
-### Chosen movement: Midnight terminal / editorial control room with event-ticket detailing
+### Chosen movement: Printed field manual / hacked event poster
 
-A high-contrast event identity that treats the hackathon like a live control room: crisp information hierarchy, oversized editorial type, code-like labels, and a calm but urgent green signal against near-black surfaces. The refinement adds ticket-like metadata, status stamps, layered console surfaces, and tactile offsets so the UI feels authored rather than like a flat card template.
+A high-contrast event identity that treats the hackathon like a field manual pinned to a workshop wall: warm paper panels, black ink, acid-green registration marks, and one orange correction stripe. The real FISAT campus image appears as evidence inside the event console and venue block rather than as generic hero decoration.
 
 ### Core principles
 
@@ -38,7 +38,7 @@ A high-contrast event identity that treats the hackathon like a live control roo
 
 ### Color philosophy
 
-Near-black is the workbench. Signal green is reserved for decisions, links, and the moments that say “go”; softer mint and paper white create enough contrast for long reading. A single acid-lime accent makes the event ownable without leaning into a noisy cyberpunk palette.
+Warm paper makes the site feel printed and human; black ink carries the serious information; signal lime marks action; orange is reserved for annotations and edges.
 
 ### Layout paradigm
 
@@ -47,9 +47,9 @@ The landing page moves as a vertical editorial sequence: an asymmetric hero, a c
 ### Signature elements
 
 - A bracketed `SH/27` wordmark and small monospace command labels.
-- Hairline borders with corner brackets and tiny green signal dots.
+- Warm paper / ink alternation that makes long pages feel like a sequence of printed sheets.
+- Ticket-style metadata strips, lime registration marks, and an orange offset edge for tactile depth.
 - A recurring “24 / 00 / 00” time readout that makes the 24-hour promise tangible.
-- Ticket-style metadata strips and lime corner markers that make the event feel scheduled and real.
 
 ### Interaction philosophy and animation
 
@@ -69,7 +69,7 @@ Brand voice examples: “Bring the rough idea. Leave with something real.” and
 
 ### Wordmark and signature color
 
-The wordmark is a compact `SH/27` bracket mark paired with the SyntaxHeist name. The ownable signature color is **Signal Lime** `#c8ff4a`, used sparingly as a visual permission slip to act.
+The wordmark is a compact `SH/27` bracket mark paired with the SyntaxHeist name. The ownable signature color is **Signal Lime** `#baff22`, used as a printed registration mark that tells the eye where to act. **Correction Orange** `#ff6b4a` is the secondary annotation color.
 
 ## Implementation decisions
 
