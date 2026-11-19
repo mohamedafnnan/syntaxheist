@@ -480,3 +480,17 @@ body::before { position: fixed; inset: 0; z-index: 50; pointer-events: none; opa
   .page-intro::after { opacity: .18; width: 100%; background-size: cover; }
   .form { box-shadow: 5px 5px 0 var(--signal); }
 }
+
+/* Official co-brand lockup: preserve the source colors and give every mark clear space. */
+.organizer-logo-plate { display: inline-flex; align-items: center; gap: 10px; min-height: 46px; padding: 6px 10px; background: #f5f6f2; border-left: 3px solid var(--signal); color: #102d45; }
+.organizer-logo-plate .ieee-logo { display: block; width: 82px; height: 46px; object-fit: contain; }
+.organizer-logo-plate .fisat-logo { display: block; width: 122px; height: 31px; object-fit: contain; }
+.logo-rule { display: block; width: 1px; height: 30px; background: #102d45; opacity: .7; }
+.organizer-lockup { align-items: center; }
+.organizer-lockup .organizer-logo-plate { min-height: 38px; padding: 4px 8px; gap: 8px; border-left-width: 2px; }
+.organizer-lockup .organizer-logo-plate .ieee-logo { width: 62px; height: 34px; }
+.organizer-lockup .organizer-logo-plate .fisat-logo { width: 112px; height: 27px; }
+.organizer-lockup .organizer-logo-plate .logo-rule { height: 24px; }
+@media (max-width: 700px) {
+  .site-header .organizer-logo-plate { display: none; }
+}
