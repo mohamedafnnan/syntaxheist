@@ -24,9 +24,9 @@ Three possible directions were considered:
 2. **Neon arcade / playful cyberpunk** — 0.04
 3. **Minimal greenroom / institutional modernism** — 0.08
 
-### Chosen movement: Midnight terminal / editorial control room
+### Chosen movement: Midnight terminal / editorial control room with event-ticket detailing
 
-A high-contrast event identity that treats the hackathon like a live control room: crisp information hierarchy, oversized editorial type, code-like labels, and a calm but urgent green signal against near-black surfaces.
+A high-contrast event identity that treats the hackathon like a live control room: crisp information hierarchy, oversized editorial type, code-like labels, and a calm but urgent green signal against near-black surfaces. The refinement adds ticket-like metadata, status stamps, layered console surfaces, and tactile offsets so the UI feels authored rather than like a flat card template.
 
 ### Core principles
 
@@ -34,6 +34,7 @@ A high-contrast event identity that treats the hackathon like a live control roo
 - Put dates, duration, and the registration action in the first screen.
 - Use asymmetric, left-anchored compositions with deliberate empty space instead of a uniform card grid.
 - Keep every interaction legible: obvious focus states, clear validation, and a useful success state.
+- Give each important block a small piece of operational detail: status, format, ownership, time, or location.
 
 ### Color philosophy
 
@@ -48,6 +49,7 @@ The landing page moves as a vertical editorial sequence: an asymmetric hero, a c
 - A bracketed `SH/27` wordmark and small monospace command labels.
 - Hairline borders with corner brackets and tiny green signal dots.
 - A recurring “24 / 00 / 00” time readout that makes the 24-hour promise tangible.
+- Ticket-style metadata strips and lime corner markers that make the event feel scheduled and real.
 
 ### Interaction philosophy and animation
 
